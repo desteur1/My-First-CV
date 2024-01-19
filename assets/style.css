@@ -130,7 +130,26 @@ main .aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    gap: 10px;
+    
 }
+a {
+    text-decoration: none;
+    color: aquamarine;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+.facebook:hover {
+    opacity: 1.0;
+}
+.a_propos{
+    line-height: 1.5;
+}
+
 
 
 
