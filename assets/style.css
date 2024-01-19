@@ -23,6 +23,8 @@ img {
     height: 100px;
     width: 100px;
      border-radius: 50px;
+     box-shadow: 1px 2px 20px blue;
+     cursor: zoom-in;
      
     } 
     a {
@@ -48,11 +50,13 @@ img {
 }
 .contact1{
     display: flex;
+    flex-wrap: wrap;
     height: 50px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #2c1d27;
-    align-items: center;
+    align-content: center;
+    
     
 }
 main {
@@ -70,7 +74,7 @@ main {
     flex-direction: column;
     align-content: center;
     height: min-content;
-    flex-basis: 600px;
+    width: 650px;
     
 
 
@@ -79,7 +83,7 @@ main {
 .man {
     display: flex;
     height: 600px;
-    flex-basis: 500px;
+    flex-basis: 350px;
     justify-content: flex-end;
     
 }
@@ -88,8 +92,9 @@ main {
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 500px;
+    width: 350px;
     align-items: center;
+    letter-spacing: 1px;
     
 
     
@@ -103,9 +108,11 @@ h1 {
  h2   {
     font-family: 'Lato', sans-serif; 
     background-color:#046cb235 ;
-    
-    
-}
+
+    }
+    h2:hover{
+        border-left: 5px solid purple;
+    }
     
 .footer {
     display: flex;
@@ -128,9 +135,28 @@ main .aside {
 
 .facebook {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    gap: 10px;
+    
 }
+a {
+    text-decoration: none;
+    color: aquamarine;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+.facebook:hover {
+    opacity: 1.0;
+}
+.a_propos{
+    line-height: 1.5;
+}
+
 
 
 
